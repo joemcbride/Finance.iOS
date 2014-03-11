@@ -1,0 +1,680 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		53ED0290E77C41079E861776 /* libPods-Finance.iOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C307F1D31E3436E9215DD68 /* libPods-Finance.iOSTests.a */; };
+		91EBBDCD739D46A8A1D3561F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4AEB56405C44FF5908D9D3C /* libPods.a */; };
+		F94F829518BECF3400A3224C /* TransactionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F94F829418BECF3400A3224C /* TransactionsViewController.m */; };
+		F94F829618BECF3400A3224C /* TransactionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F94F829418BECF3400A3224C /* TransactionsViewController.m */; };
+		F9549B1018BED4C20065D8EB /* TransactionSpecs.m in Sources */ = {isa = PBXBuildFile; fileRef = F9549B0F18BED4C20065D8EB /* TransactionSpecs.m */; };
+		F9549B1318BED6170065D8EB /* OfxParserSpecs.m in Sources */ = {isa = PBXBuildFile; fileRef = F9549B1218BED6170065D8EB /* OfxParserSpecs.m */; };
+		F9AAA9EE18C4EAE600C2F009 /* NSString+Date.m in Sources */ = {isa = PBXBuildFile; fileRef = F9AAA9ED18C4EAE600C2F009 /* NSString+Date.m */; };
+		F9AAA9EF18C4EAE600C2F009 /* NSString+Date.m in Sources */ = {isa = PBXBuildFile; fileRef = F9AAA9ED18C4EAE600C2F009 /* NSString+Date.m */; };
+		F9AAA9F218C561FE00C2F009 /* NSString+Regex.m in Sources */ = {isa = PBXBuildFile; fileRef = F9AAA9F118C561FE00C2F009 /* NSString+Regex.m */; };
+		F9AAA9F318C561FE00C2F009 /* NSString+Regex.m in Sources */ = {isa = PBXBuildFile; fileRef = F9AAA9F118C561FE00C2F009 /* NSString+Regex.m */; };
+		F9AAA9F518C565DA00C2F009 /* sample.ofx in Resources */ = {isa = PBXBuildFile; fileRef = F9AAA9F418C565DA00C2F009 /* sample.ofx */; };
+		F9AAA9F618C565DA00C2F009 /* sample.ofx in Resources */ = {isa = PBXBuildFile; fileRef = F9AAA9F418C565DA00C2F009 /* sample.ofx */; };
+		F9AAA9F918C591A500C2F009 /* TransactionDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9AAA9F818C591A500C2F009 /* TransactionDetailsViewController.m */; };
+		F9AAA9FA18C591A500C2F009 /* TransactionDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9AAA9F818C591A500C2F009 /* TransactionDetailsViewController.m */; };
+		F9AAAA0118C9FFFB00C2F009 /* TransactionCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = F9AAAA0018C9FFFB00C2F009 /* TransactionCategory.m */; };
+		F9AAAA0218C9FFFB00C2F009 /* TransactionCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = F9AAAA0018C9FFFB00C2F009 /* TransactionCategory.m */; };
+		F9B1257918BCFD260069DC22 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9B1257818BCFD260069DC22 /* Foundation.framework */; };
+		F9B1257B18BCFD260069DC22 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9B1257A18BCFD260069DC22 /* CoreGraphics.framework */; };
+		F9B1257D18BCFD260069DC22 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9B1257C18BCFD260069DC22 /* UIKit.framework */; };
+		F9B1258318BCFD260069DC22 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F9B1258118BCFD260069DC22 /* InfoPlist.strings */; };
+		F9B1258518BCFD260069DC22 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F9B1258418BCFD260069DC22 /* main.m */; };
+		F9B1258918BCFD260069DC22 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F9B1258818BCFD260069DC22 /* AppDelegate.m */; };
+		F9B1258C18BCFD260069DC22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9B1258A18BCFD260069DC22 /* Main.storyboard */; };
+		F9B1259118BCFD260069DC22 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9B1259018BCFD260069DC22 /* Images.xcassets */; };
+		F9B1259818BCFD260069DC22 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9B1259718BCFD260069DC22 /* XCTest.framework */; };
+		F9B1259918BCFD260069DC22 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9B1257818BCFD260069DC22 /* Foundation.framework */; };
+		F9B1259A18BCFD260069DC22 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9B1257C18BCFD260069DC22 /* UIKit.framework */; };
+		F9B125A218BCFD260069DC22 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F9B125A018BCFD260069DC22 /* InfoPlist.strings */; };
+		F9B125B018BCFD8A0069DC22 /* OfxParser.m in Sources */ = {isa = PBXBuildFile; fileRef = F9B125AF18BCFD8A0069DC22 /* OfxParser.m */; };
+		F9B125B118BCFD8A0069DC22 /* OfxParser.m in Sources */ = {isa = PBXBuildFile; fileRef = F9B125AF18BCFD8A0069DC22 /* OfxParser.m */; };
+		F9B125B418BCFDA00069DC22 /* SgmlReader.m in Sources */ = {isa = PBXBuildFile; fileRef = F9B125B318BCFDA00069DC22 /* SgmlReader.m */; };
+		F9B125B518BCFDA00069DC22 /* SgmlReader.m in Sources */ = {isa = PBXBuildFile; fileRef = F9B125B318BCFDA00069DC22 /* SgmlReader.m */; };
+		F9B125B818BCFF150069DC22 /* NSMutableArray+Stack.m in Sources */ = {isa = PBXBuildFile; fileRef = F9B125B718BCFF150069DC22 /* NSMutableArray+Stack.m */; };
+		F9B125B918BCFF150069DC22 /* NSMutableArray+Stack.m in Sources */ = {isa = PBXBuildFile; fileRef = F9B125B718BCFF150069DC22 /* NSMutableArray+Stack.m */; };
+		F9F46C3E18BD787B00FB8849 /* SgmlReaderSpecs.m in Sources */ = {isa = PBXBuildFile; fileRef = F9F46C3D18BD787B00FB8849 /* SgmlReaderSpecs.m */; };
+		F9F46C4218BE4C3B00FB8849 /* Account.m in Sources */ = {isa = PBXBuildFile; fileRef = F9F46C4118BE4C3B00FB8849 /* Account.m */; };
+		F9F46C4318BE4C3B00FB8849 /* Account.m in Sources */ = {isa = PBXBuildFile; fileRef = F9F46C4118BE4C3B00FB8849 /* Account.m */; };
+		F9F46C4618BE4CB800FB8849 /* Transaction.m in Sources */ = {isa = PBXBuildFile; fileRef = F9F46C4518BE4CB800FB8849 /* Transaction.m */; };
+		F9F46C4718BE4CB800FB8849 /* Transaction.m in Sources */ = {isa = PBXBuildFile; fileRef = F9F46C4518BE4CB800FB8849 /* Transaction.m */; };
+		F9F46C4A18BE4DDB00FB8849 /* DataContext.m in Sources */ = {isa = PBXBuildFile; fileRef = F9F46C4918BE4DDB00FB8849 /* DataContext.m */; };
+		F9F46C4B18BE4DDB00FB8849 /* DataContext.m in Sources */ = {isa = PBXBuildFile; fileRef = F9F46C4918BE4DDB00FB8849 /* DataContext.m */; };
+		F9F46C4E18BE4F3A00FB8849 /* AccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9F46C4D18BE4F3A00FB8849 /* AccountViewController.m */; };
+		F9F46C4F18BE4F3A00FB8849 /* AccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9F46C4D18BE4F3A00FB8849 /* AccountViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F9B1259B18BCFD260069DC22 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F9B1256D18BCFD260069DC22 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F9B1257418BCFD260069DC22;
+			remoteInfo = Finance.iOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1C307F1D31E3436E9215DD68 /* libPods-Finance.iOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Finance.iOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		532513F78F5943D0A680CAB2 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = ../Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		DEBD549A5D3040F5817A4E11 /* Pods-Finance.iOSTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Finance.iOSTests.xcconfig"; path = "../Pods/Pods-Finance.iOSTests.xcconfig"; sourceTree = "<group>"; };
+		E4AEB56405C44FF5908D9D3C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F94F829318BECF3400A3224C /* TransactionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransactionsViewController.h; sourceTree = "<group>"; };
+		F94F829418BECF3400A3224C /* TransactionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransactionsViewController.m; sourceTree = "<group>"; };
+		F9549B0F18BED4C20065D8EB /* TransactionSpecs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransactionSpecs.m; sourceTree = "<group>"; };
+		F9549B1218BED6170065D8EB /* OfxParserSpecs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OfxParserSpecs.m; sourceTree = "<group>"; };
+		F9AAA9EC18C4EAE600C2F009 /* NSString+Date.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Date.h"; sourceTree = "<group>"; };
+		F9AAA9ED18C4EAE600C2F009 /* NSString+Date.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Date.m"; sourceTree = "<group>"; };
+		F9AAA9F018C561FE00C2F009 /* NSString+Regex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Regex.h"; sourceTree = "<group>"; };
+		F9AAA9F118C561FE00C2F009 /* NSString+Regex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Regex.m"; sourceTree = "<group>"; };
+		F9AAA9F418C565DA00C2F009 /* sample.ofx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = sample.ofx; path = Finance.iOSTests/sample.ofx; sourceTree = "<group>"; };
+		F9AAA9F718C591A500C2F009 /* TransactionDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransactionDetailsViewController.h; sourceTree = "<group>"; };
+		F9AAA9F818C591A500C2F009 /* TransactionDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransactionDetailsViewController.m; sourceTree = "<group>"; };
+		F9AAA9FF18C9FFFB00C2F009 /* TransactionCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransactionCategory.h; sourceTree = "<group>"; };
+		F9AAAA0018C9FFFB00C2F009 /* TransactionCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransactionCategory.m; sourceTree = "<group>"; };
+		F9B1257518BCFD260069DC22 /* Finance.iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Finance.iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9B1257818BCFD260069DC22 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F9B1257A18BCFD260069DC22 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F9B1257C18BCFD260069DC22 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F9B1258018BCFD260069DC22 /* Finance.iOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Finance.iOS-Info.plist"; sourceTree = "<group>"; };
+		F9B1258218BCFD260069DC22 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F9B1258418BCFD260069DC22 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F9B1258618BCFD260069DC22 /* Finance.iOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Finance.iOS-Prefix.pch"; sourceTree = "<group>"; };
+		F9B1258718BCFD260069DC22 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F9B1258818BCFD260069DC22 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F9B1258B18BCFD260069DC22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F9B1259018BCFD260069DC22 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F9B1259618BCFD260069DC22 /* Finance.iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Finance.iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9B1259718BCFD260069DC22 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		F9B1259F18BCFD260069DC22 /* Finance.iOSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Finance.iOSTests-Info.plist"; sourceTree = "<group>"; };
+		F9B125A118BCFD260069DC22 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F9B125AE18BCFD8A0069DC22 /* OfxParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OfxParser.h; sourceTree = "<group>"; };
+		F9B125AF18BCFD8A0069DC22 /* OfxParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OfxParser.m; sourceTree = "<group>"; };
+		F9B125B218BCFDA00069DC22 /* SgmlReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SgmlReader.h; sourceTree = "<group>"; };
+		F9B125B318BCFDA00069DC22 /* SgmlReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SgmlReader.m; sourceTree = "<group>"; };
+		F9B125B618BCFF150069DC22 /* NSMutableArray+Stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Stack.h"; sourceTree = "<group>"; };
+		F9B125B718BCFF150069DC22 /* NSMutableArray+Stack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Stack.m"; sourceTree = "<group>"; };
+		F9F46C3D18BD787B00FB8849 /* SgmlReaderSpecs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SgmlReaderSpecs.m; sourceTree = "<group>"; };
+		F9F46C4018BE4C3B00FB8849 /* Account.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Account.h; sourceTree = "<group>"; };
+		F9F46C4118BE4C3B00FB8849 /* Account.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Account.m; sourceTree = "<group>"; };
+		F9F46C4418BE4CB800FB8849 /* Transaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Transaction.h; sourceTree = "<group>"; };
+		F9F46C4518BE4CB800FB8849 /* Transaction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Transaction.m; sourceTree = "<group>"; };
+		F9F46C4818BE4DDB00FB8849 /* DataContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataContext.h; sourceTree = "<group>"; };
+		F9F46C4918BE4DDB00FB8849 /* DataContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataContext.m; sourceTree = "<group>"; };
+		F9F46C4C18BE4F3A00FB8849 /* AccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountViewController.h; sourceTree = "<group>"; };
+		F9F46C4D18BE4F3A00FB8849 /* AccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F9B1257218BCFD260069DC22 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9B1257B18BCFD260069DC22 /* CoreGraphics.framework in Frameworks */,
+				F9B1257D18BCFD260069DC22 /* UIKit.framework in Frameworks */,
+				F9B1257918BCFD260069DC22 /* Foundation.framework in Frameworks */,
+				91EBBDCD739D46A8A1D3561F /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9B1259318BCFD260069DC22 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9B1259818BCFD260069DC22 /* XCTest.framework in Frameworks */,
+				F9B1259A18BCFD260069DC22 /* UIKit.framework in Frameworks */,
+				F9B1259918BCFD260069DC22 /* Foundation.framework in Frameworks */,
+				53ED0290E77C41079E861776 /* libPods-Finance.iOSTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F9B1256C18BCFD260069DC22 = {
+			isa = PBXGroup;
+			children = (
+				F9AAA9F418C565DA00C2F009 /* sample.ofx */,
+				F9F46C3F18BE4C2900FB8849 /* Model */,
+				F9B125AD18BCFD6F0069DC22 /* Support */,
+				F9B1257E18BCFD260069DC22 /* Finance.iOS */,
+				F9B1259D18BCFD260069DC22 /* Finance.iOSTests */,
+				F9B1257718BCFD260069DC22 /* Frameworks */,
+				F9B1257618BCFD260069DC22 /* Products */,
+				532513F78F5943D0A680CAB2 /* Pods.xcconfig */,
+				DEBD549A5D3040F5817A4E11 /* Pods-Finance.iOSTests.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		F9B1257618BCFD260069DC22 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F9B1257518BCFD260069DC22 /* Finance.iOS.app */,
+				F9B1259618BCFD260069DC22 /* Finance.iOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F9B1257718BCFD260069DC22 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F9B1257818BCFD260069DC22 /* Foundation.framework */,
+				F9B1257A18BCFD260069DC22 /* CoreGraphics.framework */,
+				F9B1257C18BCFD260069DC22 /* UIKit.framework */,
+				F9B1259718BCFD260069DC22 /* XCTest.framework */,
+				E4AEB56405C44FF5908D9D3C /* libPods.a */,
+				1C307F1D31E3436E9215DD68 /* libPods-Finance.iOSTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F9B1257E18BCFD260069DC22 /* Finance.iOS */ = {
+			isa = PBXGroup;
+			children = (
+				F9B1258718BCFD260069DC22 /* AppDelegate.h */,
+				F9B1258818BCFD260069DC22 /* AppDelegate.m */,
+				F9B1258A18BCFD260069DC22 /* Main.storyboard */,
+				F9B1259018BCFD260069DC22 /* Images.xcassets */,
+				F9B1257F18BCFD260069DC22 /* Supporting Files */,
+				F9F46C4C18BE4F3A00FB8849 /* AccountViewController.h */,
+				F9F46C4D18BE4F3A00FB8849 /* AccountViewController.m */,
+				F94F829318BECF3400A3224C /* TransactionsViewController.h */,
+				F94F829418BECF3400A3224C /* TransactionsViewController.m */,
+				F9AAA9F718C591A500C2F009 /* TransactionDetailsViewController.h */,
+				F9AAA9F818C591A500C2F009 /* TransactionDetailsViewController.m */,
+			);
+			path = Finance.iOS;
+			sourceTree = "<group>";
+		};
+		F9B1257F18BCFD260069DC22 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F9B1258018BCFD260069DC22 /* Finance.iOS-Info.plist */,
+				F9B1258118BCFD260069DC22 /* InfoPlist.strings */,
+				F9B1258418BCFD260069DC22 /* main.m */,
+				F9B1258618BCFD260069DC22 /* Finance.iOS-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F9B1259D18BCFD260069DC22 /* Finance.iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				F9B1259E18BCFD260069DC22 /* Supporting Files */,
+				F9F46C3D18BD787B00FB8849 /* SgmlReaderSpecs.m */,
+				F9549B0F18BED4C20065D8EB /* TransactionSpecs.m */,
+				F9549B1218BED6170065D8EB /* OfxParserSpecs.m */,
+			);
+			path = Finance.iOSTests;
+			sourceTree = "<group>";
+		};
+		F9B1259E18BCFD260069DC22 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F9B1259F18BCFD260069DC22 /* Finance.iOSTests-Info.plist */,
+				F9B125A018BCFD260069DC22 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F9B125AD18BCFD6F0069DC22 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				F9B125AE18BCFD8A0069DC22 /* OfxParser.h */,
+				F9B125AF18BCFD8A0069DC22 /* OfxParser.m */,
+				F9B125B218BCFDA00069DC22 /* SgmlReader.h */,
+				F9B125B318BCFDA00069DC22 /* SgmlReader.m */,
+				F9B125B618BCFF150069DC22 /* NSMutableArray+Stack.h */,
+				F9B125B718BCFF150069DC22 /* NSMutableArray+Stack.m */,
+				F9AAA9EC18C4EAE600C2F009 /* NSString+Date.h */,
+				F9AAA9ED18C4EAE600C2F009 /* NSString+Date.m */,
+				F9AAA9F018C561FE00C2F009 /* NSString+Regex.h */,
+				F9AAA9F118C561FE00C2F009 /* NSString+Regex.m */,
+			);
+			name = Support;
+			sourceTree = "<group>";
+		};
+		F9F46C3F18BE4C2900FB8849 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F9F46C4018BE4C3B00FB8849 /* Account.h */,
+				F9F46C4118BE4C3B00FB8849 /* Account.m */,
+				F9F46C4418BE4CB800FB8849 /* Transaction.h */,
+				F9F46C4518BE4CB800FB8849 /* Transaction.m */,
+				F9F46C4818BE4DDB00FB8849 /* DataContext.h */,
+				F9F46C4918BE4DDB00FB8849 /* DataContext.m */,
+				F9AAA9FF18C9FFFB00C2F009 /* TransactionCategory.h */,
+				F9AAAA0018C9FFFB00C2F009 /* TransactionCategory.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F9B1257418BCFD260069DC22 /* Finance.iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9B125A718BCFD260069DC22 /* Build configuration list for PBXNativeTarget "Finance.iOS" */;
+			buildPhases = (
+				9F1DCFD37F194EB1BA379E17 /* Check Pods Manifest.lock */,
+				F9B1257118BCFD260069DC22 /* Sources */,
+				F9B1257218BCFD260069DC22 /* Frameworks */,
+				F9B1257318BCFD260069DC22 /* Resources */,
+				D19AFE1931FB444984F135EB /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Finance.iOS;
+			productName = Finance.iOS;
+			productReference = F9B1257518BCFD260069DC22 /* Finance.iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F9B1259518BCFD260069DC22 /* Finance.iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9B125AA18BCFD260069DC22 /* Build configuration list for PBXNativeTarget "Finance.iOSTests" */;
+			buildPhases = (
+				0BA09FFE10154BB7AE714C9C /* Check Pods Manifest.lock */,
+				F9B1259218BCFD260069DC22 /* Sources */,
+				F9B1259318BCFD260069DC22 /* Frameworks */,
+				F9B1259418BCFD260069DC22 /* Resources */,
+				AE796DD939084BF8B2C2C7B8 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F9B1259C18BCFD260069DC22 /* PBXTargetDependency */,
+			);
+			name = Finance.iOSTests;
+			productName = Finance.iOSTests;
+			productReference = F9B1259618BCFD260069DC22 /* Finance.iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F9B1256D18BCFD260069DC22 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Joe McBride";
+				TargetAttributes = {
+					F9B1259518BCFD260069DC22 = {
+						TestTargetID = F9B1257418BCFD260069DC22;
+					};
+				};
+			};
+			buildConfigurationList = F9B1257018BCFD260069DC22 /* Build configuration list for PBXProject "Finance.iOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F9B1256C18BCFD260069DC22;
+			productRefGroup = F9B1257618BCFD260069DC22 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F9B1257418BCFD260069DC22 /* Finance.iOS */,
+				F9B1259518BCFD260069DC22 /* Finance.iOSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F9B1257318BCFD260069DC22 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9B1259118BCFD260069DC22 /* Images.xcassets in Resources */,
+				F9B1258318BCFD260069DC22 /* InfoPlist.strings in Resources */,
+				F9B1258C18BCFD260069DC22 /* Main.storyboard in Resources */,
+				F9AAA9F518C565DA00C2F009 /* sample.ofx in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9B1259418BCFD260069DC22 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9B125A218BCFD260069DC22 /* InfoPlist.strings in Resources */,
+				F9AAA9F618C565DA00C2F009 /* sample.ofx in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0BA09FFE10154BB7AE714C9C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9F1DCFD37F194EB1BA379E17 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AE796DD939084BF8B2C2C7B8 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Pods-Finance.iOSTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D19AFE1931FB444984F135EB /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F9B1257118BCFD260069DC22 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9B125B818BCFF150069DC22 /* NSMutableArray+Stack.m in Sources */,
+				F9AAA9F218C561FE00C2F009 /* NSString+Regex.m in Sources */,
+				F9AAAA0118C9FFFB00C2F009 /* TransactionCategory.m in Sources */,
+				F9B125B418BCFDA00069DC22 /* SgmlReader.m in Sources */,
+				F9B125B018BCFD8A0069DC22 /* OfxParser.m in Sources */,
+				F9AAA9EE18C4EAE600C2F009 /* NSString+Date.m in Sources */,
+				F9F46C4A18BE4DDB00FB8849 /* DataContext.m in Sources */,
+				F9F46C4E18BE4F3A00FB8849 /* AccountViewController.m in Sources */,
+				F9F46C4218BE4C3B00FB8849 /* Account.m in Sources */,
+				F9B1258918BCFD260069DC22 /* AppDelegate.m in Sources */,
+				F9AAA9F918C591A500C2F009 /* TransactionDetailsViewController.m in Sources */,
+				F9F46C4618BE4CB800FB8849 /* Transaction.m in Sources */,
+				F9B1258518BCFD260069DC22 /* main.m in Sources */,
+				F94F829518BECF3400A3224C /* TransactionsViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9B1259218BCFD260069DC22 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9F46C4718BE4CB800FB8849 /* Transaction.m in Sources */,
+				F9549B1018BED4C20065D8EB /* TransactionSpecs.m in Sources */,
+				F9AAAA0218C9FFFB00C2F009 /* TransactionCategory.m in Sources */,
+				F9F46C3E18BD787B00FB8849 /* SgmlReaderSpecs.m in Sources */,
+				F94F829618BECF3400A3224C /* TransactionsViewController.m in Sources */,
+				F9AAA9F318C561FE00C2F009 /* NSString+Regex.m in Sources */,
+				F9F46C4B18BE4DDB00FB8849 /* DataContext.m in Sources */,
+				F9AAA9FA18C591A500C2F009 /* TransactionDetailsViewController.m in Sources */,
+				F9B125B918BCFF150069DC22 /* NSMutableArray+Stack.m in Sources */,
+				F9B125B118BCFD8A0069DC22 /* OfxParser.m in Sources */,
+				F9AAA9EF18C4EAE600C2F009 /* NSString+Date.m in Sources */,
+				F9F46C4318BE4C3B00FB8849 /* Account.m in Sources */,
+				F9F46C4F18BE4F3A00FB8849 /* AccountViewController.m in Sources */,
+				F9B125B518BCFDA00069DC22 /* SgmlReader.m in Sources */,
+				F9549B1318BED6170065D8EB /* OfxParserSpecs.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F9B1259C18BCFD260069DC22 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F9B1257418BCFD260069DC22 /* Finance.iOS */;
+			targetProxy = F9B1259B18BCFD260069DC22 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F9B1258118BCFD260069DC22 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F9B1258218BCFD260069DC22 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F9B1258A18BCFD260069DC22 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F9B1258B18BCFD260069DC22 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F9B125A018BCFD260069DC22 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F9B125A118BCFD260069DC22 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F9B125A518BCFD260069DC22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F9B125A618BCFD260069DC22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F9B125A818BCFD260069DC22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 532513F78F5943D0A680CAB2 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Finance.iOS/Finance.iOS-Prefix.pch";
+				INFOPLIST_FILE = "Finance.iOS/Finance.iOS-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F9B125A918BCFD260069DC22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 532513F78F5943D0A680CAB2 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Finance.iOS/Finance.iOS-Prefix.pch";
+				INFOPLIST_FILE = "Finance.iOS/Finance.iOS-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		F9B125AB18BCFD260069DC22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DEBD549A5D3040F5817A4E11 /* Pods-Finance.iOSTests.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Finance.iOS.app/Finance.iOS";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Finance.iOS/Finance.iOS-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Finance.iOSTests/Finance.iOSTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		F9B125AC18BCFD260069DC22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DEBD549A5D3040F5817A4E11 /* Pods-Finance.iOSTests.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Finance.iOS.app/Finance.iOS";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Finance.iOS/Finance.iOS-Prefix.pch";
+				INFOPLIST_FILE = "Finance.iOSTests/Finance.iOSTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F9B1257018BCFD260069DC22 /* Build configuration list for PBXProject "Finance.iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9B125A518BCFD260069DC22 /* Debug */,
+				F9B125A618BCFD260069DC22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9B125A718BCFD260069DC22 /* Build configuration list for PBXNativeTarget "Finance.iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9B125A818BCFD260069DC22 /* Debug */,
+				F9B125A918BCFD260069DC22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9B125AA18BCFD260069DC22 /* Build configuration list for PBXNativeTarget "Finance.iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9B125AB18BCFD260069DC22 /* Debug */,
+				F9B125AC18BCFD260069DC22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F9B1256D18BCFD260069DC22 /* Project object */;
+}
