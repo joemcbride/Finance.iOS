@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "Transaction.h"
 
-@interface TransactionDetailsViewController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate>
+@interface TransactionDetailsViewController : UIViewController
 
 @property (nonatomic, strong) Transaction *transaction;
 

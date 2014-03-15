@@ -11,7 +11,7 @@
 #import "TransactionCategory.h"
 #import "ReactiveCocoa.h"
 
-@interface TransactionDetailsViewController () {
+@interface TransactionDetailsViewController () <UIPickerViewDataSource, UIPickerViewDelegate> {
     DataContext *_context;
     NSArray *_categories;
 }
@@ -63,8 +63,7 @@
 }
 
 - (void)categoryTapped {
-    self.category.hidden = YES;
-    self.categoryPicker.hidden = NO;
+    self.categoryPicker.hidden = !self.categoryPicker.hidden;
 }
 
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView {
@@ -81,13 +80,9 @@
 }
 
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
-    
     TransactionCategory *category = _categories[row];
     self.transaction.categoryId = category.categoryId;
-    
     self.category.text = category.name;
-    self.category.hidden = NO;
-    self.categoryPicker.hidden = YES;
 }
 
 - (TransactionCategory *)categoryWithId:(NSInteger)categoryId {
