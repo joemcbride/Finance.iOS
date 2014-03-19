@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MDMCoreData.h"
 
 @interface AccountViewController : UITableViewController
 

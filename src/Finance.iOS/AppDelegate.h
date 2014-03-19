@@ -7,9 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MDMCoreData.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (nonatomic, strong) MDMPersistenceController *persistenceController;
+
++ (AppDelegate *)instance;
+- (void)save;
 
 @end

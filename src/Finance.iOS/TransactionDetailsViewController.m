@@ -10,6 +10,7 @@
 #import "DataContext.h"
 #import "TransactionCategory.h"
 #import "ReactiveCocoa.h"
+#import "AppDelegate.h"
 
 @interface TransactionDetailsViewController () <UIPickerViewDataSource, UIPickerViewDelegate> {
     DataContext *_context;
@@ -37,11 +38,9 @@
     
     self.memo.text = self.transaction.memo;
     
-    NSNumber *number = [NSNumber numberWithFloat:self.transaction.amount];
-    
     NSNumberFormatter *formatter = [[NSNumberFormatter alloc] init];
     [formatter setNumberStyle:NSNumberFormatterCurrencyStyle];
-    self.amount.text = [formatter stringFromNumber:number];
+    self.amount.text = [formatter stringFromNumber:self.transaction.amount];
     
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setDateFormat:@"MM/dd/yyyy"];
@@ -81,14 +80,16 @@
 
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
     TransactionCategory *category = _categories[row];
-    self.transaction.categoryId = category.categoryId;
+    self.transaction.categoryId = [NSNumber numberWithInteger:category.categoryId];
     self.category.text = category.name;
+    
+    [[AppDelegate instance] save];
 }
 
-- (TransactionCategory *)categoryWithId:(NSInteger)categoryId {
+- (TransactionCategory *)categoryWithId:(NSNumber *)categoryId {
     
     RACSequence *seq = [_categories.rac_sequence filter:^BOOL(TransactionCategory *cat) {
-        return cat.categoryId == categoryId;
+        return cat.categoryId == [categoryId integerValue];
     }];
     
     TransactionCategory *result = [seq head];

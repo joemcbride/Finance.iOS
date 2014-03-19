@@ -14,5 +14,6 @@
 - (NSArray *)accounts;
 - (NSArray *)transactionsFor:(Account *)account;
 - (NSArray *)categories;
+- (NSArray *)import:(NSURL *)url for:(Account *)account;
 
 @end

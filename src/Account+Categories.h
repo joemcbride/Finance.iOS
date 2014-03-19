@@ -1,5 +1,5 @@
 //
-//  Account.m
+//  Account+Categories.h
 //  Finance.iOS
 //
 //  Created by Joseph McBride on 3/17/14.
@@ -7,11 +7,10 @@
 //
 
 #import "Account.h"
+#import "AppDelegate.h"
 
+@interface Account (Categories)
 
-@implementation Account
-
-@dynamic accountId;
-@dynamic name;
++(Account *)newAccount;
 
 @end

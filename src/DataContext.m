@@ -8,23 +8,47 @@
 
 #import "DataContext.h"
 #import "Account.h"
+#import "Account+Categories.h"
 #import "TransactionCategory.h"
 #import "OfxParser.h"
+#import "AppDelegate.h"
+#import "Transaction.h"
 
 @implementation DataContext
 
 - (NSArray *)accounts {
-    NSArray *items = @[[Account accountWithName:@"Personal Checking"], [Account accountWithName:@"Visa"]];
-    return items;
+    MDMPersistenceController *coreData = [AppDelegate instance].persistenceController;
+    
+    NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"Account"];
+    
+    NSError *error;
+    NSArray *results = [coreData.managedObjectContext executeFetchRequest:request error:&error];
+    
+    if(!results) {
+        NSLog(@"Error fetching accounts: %@", error.localizedDescription);
+    }
+    
+    return results;
 }
 
 - (NSArray *)transactionsFor:(Account *)account {
-    OfxParser *parser = [[OfxParser alloc] init];
     
-    NSURL *url = [[NSBundle bundleForClass:self.class] URLForResource:@"sample" withExtension:@"ofx"];
-    NSString *data = [NSString stringWithContentsOfURL:url encoding:NSUTF8StringEncoding error:nil];
+    MDMPersistenceController *coreData = [AppDelegate instance].persistenceController;
     
-    return [parser parseOfxTransactions:data];
+    NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"Transaction"];
+    request.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"datePosted" ascending:NO]];
+    
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"account.accountId == %@", account.accountId];
+    [request setPredicate:predicate];
+    
+    NSError *error;
+    NSArray *results = [coreData.managedObjectContext executeFetchRequest:request error:&error];
+    
+    if(!results) {
+        NSLog(@"Error fetching transactions: %@", error.localizedDescription);
+    }
+    
+    return results;
 }
 
 - (NSArray *)categories {
@@ -34,6 +58,29 @@
                             [TransactionCategory categoryWithId:3 andName:@"Travel Meals"]
                             ];
     return categories;
+}
+
+-(Account *)accountWithName:(NSString *)name andId:(NSNumber *)num {
+    
+    Account *acc = [Account newAccount];
+    acc.accountId = num;
+    acc.name = name;
+    return acc;
+}
+
+- (NSArray *)import:(NSURL *)url for:(Account *)account {
+    
+    OfxParser *parser = [[OfxParser alloc] init];
+    
+    NSString *data = [NSString stringWithContentsOfURL:url encoding:NSUTF8StringEncoding error:nil];
+    
+    NSArray *transactions = [parser parseOfxTransactions:data];
+    
+    [transactions enumerateObjectsUsingBlock:^(Transaction *trans, NSUInteger idx, BOOL *stop) {
+        trans.account = account;
+    }];
+    
+    return transactions;
 }
 
 @end

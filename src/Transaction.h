@@ -2,27 +2,24 @@
 //  Transaction.h
 //  Finance.iOS
 //
-//  Created by Joseph McBride on 2/26/14.
+//  Created by Joseph McBride on 3/17/14.
 //  Copyright (c) 2014 Joe McBride. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
-#import "Ono.h"
+#import <CoreData/CoreData.h>
 
-@interface Transaction : NSObject
 
-@property (nonatomic, copy) NSString *externalId;
-@property (nonatomic, strong) NSDate *datePosted;
-@property (nonatomic, copy) NSString *type;
-@property (nonatomic, copy) NSString *name;
-@property (nonatomic, copy) NSString *memo;
-@property (nonatomic, assign) float amount;
-@property (nonatomic, assign) NSInteger categoryId;
+@interface Transaction : NSManagedObject
 
-+ (id)transactionWithElement:(ONOXMLElement *)element;
-- (id)initWithElement:(ONOXMLElement *)element;
-
-- (id)initWithXml:(NSString *)xml;
-+ (id)transactionWithXml:(NSString *)xml;
+@property (nonatomic, retain) NSNumber * transactionId;
+@property (nonatomic, retain) NSNumber * categoryId;
+@property (nonatomic, retain) NSNumber * amount;
+@property (nonatomic, retain) NSString * memo;
+@property (nonatomic, retain) NSString * name;
+@property (nonatomic, retain) NSString * type;
+@property (nonatomic, retain) NSDate * datePosted;
+@property (nonatomic, retain) NSString * externalId;
+@property (nonatomic, retain) NSManagedObject *account;
 
 @end

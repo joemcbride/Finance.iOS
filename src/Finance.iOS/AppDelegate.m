@@ -7,13 +7,65 @@
 //
 
 #import "AppDelegate.h"
+#import "AccountViewController.h"
+#import "DataContext.h"
 
 @implementation AppDelegate
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
-    // Override point for customization after application launch.
++ (AppDelegate *)instance {
+    return (AppDelegate *)[UIApplication sharedApplication].delegate;
+}
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    [self setupCoreData];
+    
+    //[self import:@"sample" extension:@"ofx"];
+    
     return YES;
+}
+
+- (NSString *)documentsDirectory {
+    return [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject];
+}
+
+- (void)setupCoreData {
+    NSURL *modelUrl = [[NSBundle mainBundle] URLForResource:@"Finance" withExtension:@"momd"];
+    NSURL *storeUrl = [NSURL fileURLWithPath:[[self documentsDirectory] stringByAppendingPathComponent:@"finance.sqlite"]];
+    
+    NSLog(@"modelUrl: %@", modelUrl);
+    NSLog(@"storeUrl: %@", storeUrl);
+    
+    self.persistenceController = [[MDMPersistenceController alloc] initWithStoreURL:storeUrl modelURL:modelUrl];
+}
+
+- (void)save {
+    
+    NSError *error;
+    
+    if([self.persistenceController.managedObjectContext save:&error]) {
+        
+        [self.persistenceController saveContextAndWait:YES completion:^(NSError *error) {
+            if(error) {
+                NSLog(@"ERROR: %@", error.localizedDescription);
+            }
+        }];
+        
+    } else {
+        NSLog(@"Could not save: %@", error.localizedDescription);
+    }
+}
+
+- (void)import:(NSString *)resource extension:(NSString *)extension {
+    DataContext *context = [[DataContext alloc] init];
+    NSArray *accounts = [context accounts];
+    
+    NSURL *url = [[NSBundle bundleForClass:self.class] URLForResource:resource withExtension:extension];
+    
+    NSArray *results = [context import:url for:[accounts firstObject]];
+    if(results){
+        [self save];
+    }
 }
 							
 - (void)applicationWillResignActive:(UIApplication *)application

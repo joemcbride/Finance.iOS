@@ -12,6 +12,7 @@
 #import "NSMutableArray+Stack.h"
 #import "Ono.h"
 #import "Transaction.h"
+#import "Transaction+Categories.h"
 
 static inline BOOL isEmpty(id thing) {
     return thing == nil
@@ -34,7 +35,8 @@ static inline BOOL isEmpty(id thing) {
     
     [document enumerateElementsWithXPath:@"//BANKMSGSRSV1/STMTTRNRS/STMTRS/BANKTRANLIST/STMTTRN"
                                    block:^(ONOXMLElement *element) {
-        Transaction *trans = [Transaction transactionWithXml:[element description]];
+        Transaction *trans = [Transaction newTransaction];
+        [trans initWithXml:[element description]];
         [transactions addObject:trans];
     }];
     

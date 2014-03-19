@@ -41,11 +41,21 @@
 		F9B125B518BCFDA00069DC22 /* SgmlReader.m in Sources */ = {isa = PBXBuildFile; fileRef = F9B125B318BCFDA00069DC22 /* SgmlReader.m */; };
 		F9B125B818BCFF150069DC22 /* NSMutableArray+Stack.m in Sources */ = {isa = PBXBuildFile; fileRef = F9B125B718BCFF150069DC22 /* NSMutableArray+Stack.m */; };
 		F9B125B918BCFF150069DC22 /* NSMutableArray+Stack.m in Sources */ = {isa = PBXBuildFile; fileRef = F9B125B718BCFF150069DC22 /* NSMutableArray+Stack.m */; };
+		F9DE18F418D74872009EBA27 /* Finance.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F9DE18F218D74872009EBA27 /* Finance.xcdatamodeld */; };
+		F9DE18F518D74872009EBA27 /* Finance.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F9DE18F218D74872009EBA27 /* Finance.xcdatamodeld */; };
+		F9DE18F818D74E50009EBA27 /* Transaction.m in Sources */ = {isa = PBXBuildFile; fileRef = F9DE18F718D74E50009EBA27 /* Transaction.m */; };
+		F9DE18F918D74E50009EBA27 /* Transaction.m in Sources */ = {isa = PBXBuildFile; fileRef = F9DE18F718D74E50009EBA27 /* Transaction.m */; };
+		F9DE18FC18D74E51009EBA27 /* Account.m in Sources */ = {isa = PBXBuildFile; fileRef = F9DE18FB18D74E51009EBA27 /* Account.m */; };
+		F9DE18FD18D74E51009EBA27 /* Account.m in Sources */ = {isa = PBXBuildFile; fileRef = F9DE18FB18D74E51009EBA27 /* Account.m */; };
+		F9DE190418D74F1A009EBA27 /* Transaction+Categories.m in Sources */ = {isa = PBXBuildFile; fileRef = F9DE190318D74F1A009EBA27 /* Transaction+Categories.m */; };
+		F9DE190518D74F1A009EBA27 /* Transaction+Categories.m in Sources */ = {isa = PBXBuildFile; fileRef = F9DE190318D74F1A009EBA27 /* Transaction+Categories.m */; };
+		F9DE190818D7DBD4009EBA27 /* Account+Categories.m in Sources */ = {isa = PBXBuildFile; fileRef = F9DE190718D7DBD4009EBA27 /* Account+Categories.m */; };
+		F9DE190918D7DBD4009EBA27 /* Account+Categories.m in Sources */ = {isa = PBXBuildFile; fileRef = F9DE190718D7DBD4009EBA27 /* Account+Categories.m */; };
 		F9F46C3E18BD787B00FB8849 /* SgmlReaderSpecs.m in Sources */ = {isa = PBXBuildFile; fileRef = F9F46C3D18BD787B00FB8849 /* SgmlReaderSpecs.m */; };
-		F9F46C4218BE4C3B00FB8849 /* Account.m in Sources */ = {isa = PBXBuildFile; fileRef = F9F46C4118BE4C3B00FB8849 /* Account.m */; };
-		F9F46C4318BE4C3B00FB8849 /* Account.m in Sources */ = {isa = PBXBuildFile; fileRef = F9F46C4118BE4C3B00FB8849 /* Account.m */; };
-		F9F46C4618BE4CB800FB8849 /* Transaction.m in Sources */ = {isa = PBXBuildFile; fileRef = F9F46C4518BE4CB800FB8849 /* Transaction.m */; };
-		F9F46C4718BE4CB800FB8849 /* Transaction.m in Sources */ = {isa = PBXBuildFile; fileRef = F9F46C4518BE4CB800FB8849 /* Transaction.m */; };
+		F9F46C4218BE4C3B00FB8849 /* Account-old.m in Sources */ = {isa = PBXBuildFile; fileRef = F9F46C4118BE4C3B00FB8849 /* Account-old.m */; };
+		F9F46C4318BE4C3B00FB8849 /* Account-old.m in Sources */ = {isa = PBXBuildFile; fileRef = F9F46C4118BE4C3B00FB8849 /* Account-old.m */; };
+		F9F46C4618BE4CB800FB8849 /* Transaction-old.m in Sources */ = {isa = PBXBuildFile; fileRef = F9F46C4518BE4CB800FB8849 /* Transaction-old.m */; };
+		F9F46C4718BE4CB800FB8849 /* Transaction-old.m in Sources */ = {isa = PBXBuildFile; fileRef = F9F46C4518BE4CB800FB8849 /* Transaction-old.m */; };
 		F9F46C4A18BE4DDB00FB8849 /* DataContext.m in Sources */ = {isa = PBXBuildFile; fileRef = F9F46C4918BE4DDB00FB8849 /* DataContext.m */; };
 		F9F46C4B18BE4DDB00FB8849 /* DataContext.m in Sources */ = {isa = PBXBuildFile; fileRef = F9F46C4918BE4DDB00FB8849 /* DataContext.m */; };
 		F9F46C4E18BE4F3A00FB8849 /* AccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9F46C4D18BE4F3A00FB8849 /* AccountViewController.m */; };
@@ -102,11 +112,20 @@
 		F9B125B318BCFDA00069DC22 /* SgmlReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SgmlReader.m; sourceTree = "<group>"; };
 		F9B125B618BCFF150069DC22 /* NSMutableArray+Stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Stack.h"; sourceTree = "<group>"; };
 		F9B125B718BCFF150069DC22 /* NSMutableArray+Stack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Stack.m"; sourceTree = "<group>"; };
+		F9DE18F318D74872009EBA27 /* Finance.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Finance.xcdatamodel; sourceTree = "<group>"; };
+		F9DE18F618D74E50009EBA27 /* Transaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Transaction.h; sourceTree = "<group>"; };
+		F9DE18F718D74E50009EBA27 /* Transaction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Transaction.m; sourceTree = "<group>"; };
+		F9DE18FA18D74E51009EBA27 /* Account.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Account.h; sourceTree = "<group>"; };
+		F9DE18FB18D74E51009EBA27 /* Account.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Account.m; sourceTree = "<group>"; };
+		F9DE190218D74F1A009EBA27 /* Transaction+Categories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Transaction+Categories.h"; sourceTree = "<group>"; };
+		F9DE190318D74F1A009EBA27 /* Transaction+Categories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Transaction+Categories.m"; sourceTree = "<group>"; };
+		F9DE190618D7DBD4009EBA27 /* Account+Categories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Account+Categories.h"; sourceTree = "<group>"; };
+		F9DE190718D7DBD4009EBA27 /* Account+Categories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Account+Categories.m"; sourceTree = "<group>"; };
 		F9F46C3D18BD787B00FB8849 /* SgmlReaderSpecs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SgmlReaderSpecs.m; sourceTree = "<group>"; };
-		F9F46C4018BE4C3B00FB8849 /* Account.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Account.h; sourceTree = "<group>"; };
-		F9F46C4118BE4C3B00FB8849 /* Account.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Account.m; sourceTree = "<group>"; };
-		F9F46C4418BE4CB800FB8849 /* Transaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Transaction.h; sourceTree = "<group>"; };
-		F9F46C4518BE4CB800FB8849 /* Transaction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Transaction.m; sourceTree = "<group>"; };
+		F9F46C4018BE4C3B00FB8849 /* Account-old.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Account-old.h"; sourceTree = "<group>"; };
+		F9F46C4118BE4C3B00FB8849 /* Account-old.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Account-old.m"; sourceTree = "<group>"; };
+		F9F46C4418BE4CB800FB8849 /* Transaction-old.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Transaction-old.h"; sourceTree = "<group>"; };
+		F9F46C4518BE4CB800FB8849 /* Transaction-old.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Transaction-old.m"; sourceTree = "<group>"; };
 		F9F46C4818BE4DDB00FB8849 /* DataContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataContext.h; sourceTree = "<group>"; };
 		F9F46C4918BE4DDB00FB8849 /* DataContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataContext.m; sourceTree = "<group>"; };
 		F9F46C4C18BE4F3A00FB8849 /* AccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountViewController.h; sourceTree = "<group>"; };
@@ -245,14 +264,23 @@
 		F9F46C3F18BE4C2900FB8849 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				F9F46C4018BE4C3B00FB8849 /* Account.h */,
-				F9F46C4118BE4C3B00FB8849 /* Account.m */,
-				F9F46C4418BE4CB800FB8849 /* Transaction.h */,
-				F9F46C4518BE4CB800FB8849 /* Transaction.m */,
+				F9F46C4018BE4C3B00FB8849 /* Account-old.h */,
+				F9F46C4118BE4C3B00FB8849 /* Account-old.m */,
+				F9F46C4418BE4CB800FB8849 /* Transaction-old.h */,
+				F9F46C4518BE4CB800FB8849 /* Transaction-old.m */,
 				F9F46C4818BE4DDB00FB8849 /* DataContext.h */,
 				F9F46C4918BE4DDB00FB8849 /* DataContext.m */,
 				F9AAA9FF18C9FFFB00C2F009 /* TransactionCategory.h */,
 				F9AAAA0018C9FFFB00C2F009 /* TransactionCategory.m */,
+				F9DE18F218D74872009EBA27 /* Finance.xcdatamodeld */,
+				F9DE18FA18D74E51009EBA27 /* Account.h */,
+				F9DE18FB18D74E51009EBA27 /* Account.m */,
+				F9DE18F618D74E50009EBA27 /* Transaction.h */,
+				F9DE18F718D74E50009EBA27 /* Transaction.m */,
+				F9DE190218D74F1A009EBA27 /* Transaction+Categories.h */,
+				F9DE190318D74F1A009EBA27 /* Transaction+Categories.m */,
+				F9DE190618D7DBD4009EBA27 /* Account+Categories.h */,
+				F9DE190718D7DBD4009EBA27 /* Account+Categories.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -428,14 +456,19 @@
 				F9AAAA0118C9FFFB00C2F009 /* TransactionCategory.m in Sources */,
 				F9B125B418BCFDA00069DC22 /* SgmlReader.m in Sources */,
 				F9B125B018BCFD8A0069DC22 /* OfxParser.m in Sources */,
+				F9DE18FC18D74E51009EBA27 /* Account.m in Sources */,
 				F9AAA9EE18C4EAE600C2F009 /* NSString+Date.m in Sources */,
+				F9DE18F418D74872009EBA27 /* Finance.xcdatamodeld in Sources */,
+				F9DE190418D74F1A009EBA27 /* Transaction+Categories.m in Sources */,
 				F9F46C4A18BE4DDB00FB8849 /* DataContext.m in Sources */,
 				F9F46C4E18BE4F3A00FB8849 /* AccountViewController.m in Sources */,
-				F9F46C4218BE4C3B00FB8849 /* Account.m in Sources */,
+				F9F46C4218BE4C3B00FB8849 /* Account-old.m in Sources */,
 				F9B1258918BCFD260069DC22 /* AppDelegate.m in Sources */,
 				F9AAA9F918C591A500C2F009 /* TransactionDetailsViewController.m in Sources */,
-				F9F46C4618BE4CB800FB8849 /* Transaction.m in Sources */,
+				F9F46C4618BE4CB800FB8849 /* Transaction-old.m in Sources */,
 				F9B1258518BCFD260069DC22 /* main.m in Sources */,
+				F9DE18F818D74E50009EBA27 /* Transaction.m in Sources */,
+				F9DE190818D7DBD4009EBA27 /* Account+Categories.m in Sources */,
 				F94F829518BECF3400A3224C /* TransactionsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -444,7 +477,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9F46C4718BE4CB800FB8849 /* Transaction.m in Sources */,
+				F9DE18F518D74872009EBA27 /* Finance.xcdatamodeld in Sources */,
+				F9DE190518D74F1A009EBA27 /* Transaction+Categories.m in Sources */,
+				F9F46C4718BE4CB800FB8849 /* Transaction-old.m in Sources */,
 				F9549B1018BED4C20065D8EB /* TransactionSpecs.m in Sources */,
 				F9AAAA0218C9FFFB00C2F009 /* TransactionCategory.m in Sources */,
 				F9F46C3E18BD787B00FB8849 /* SgmlReaderSpecs.m in Sources */,
@@ -452,10 +487,13 @@
 				F9AAA9F318C561FE00C2F009 /* NSString+Regex.m in Sources */,
 				F9F46C4B18BE4DDB00FB8849 /* DataContext.m in Sources */,
 				F9AAA9FA18C591A500C2F009 /* TransactionDetailsViewController.m in Sources */,
+				F9DE18FD18D74E51009EBA27 /* Account.m in Sources */,
 				F9B125B918BCFF150069DC22 /* NSMutableArray+Stack.m in Sources */,
+				F9DE18F918D74E50009EBA27 /* Transaction.m in Sources */,
+				F9DE190918D7DBD4009EBA27 /* Account+Categories.m in Sources */,
 				F9B125B118BCFD8A0069DC22 /* OfxParser.m in Sources */,
 				F9AAA9EF18C4EAE600C2F009 /* NSString+Date.m in Sources */,
-				F9F46C4318BE4C3B00FB8849 /* Account.m in Sources */,
+				F9F46C4318BE4C3B00FB8849 /* Account-old.m in Sources */,
 				F9F46C4F18BE4F3A00FB8849 /* AccountViewController.m in Sources */,
 				F9B125B518BCFDA00069DC22 /* SgmlReader.m in Sources */,
 				F9549B1318BED6170065D8EB /* OfxParserSpecs.m in Sources */,
@@ -675,6 +713,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F9DE18F218D74872009EBA27 /* Finance.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F9DE18F318D74872009EBA27 /* Finance.xcdatamodel */,
+			);
+			currentVersion = F9DE18F318D74872009EBA27 /* Finance.xcdatamodel */;
+			path = Finance.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = F9B1256D18BCFD260069DC22 /* Project object */;
 }

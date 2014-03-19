@@ -2,17 +2,16 @@
 //  Account.h
 //  Finance.iOS
 //
-//  Created by Joseph McBride on 2/26/14.
+//  Created by Joseph McBride on 3/17/14.
 //  Copyright (c) 2014 Joe McBride. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
+#import <CoreData/CoreData.h>
 
-@interface Account : NSObject
+@interface Account : NSManagedObject
 
-@property (nonatomic, copy) NSString *name;
-
-+(id)accountWithName:(NSString *)name;
--(id)initWithName:(NSString *)name;
+@property (nonatomic, retain) NSNumber * accountId;
+@property (nonatomic, retain) NSString * name;
 
 @end
